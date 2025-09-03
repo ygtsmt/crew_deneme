@@ -9,7 +9,7 @@ const String whaleJson = '''
   "status": "success",
   "data": [
     {
-      "tx_hash": "0x9b3a0f2d5c1e478a6e3c2e0d9b4f7a3c7f8d1e2a3b4c5d6e7f8a9b0c1d2e3f4a",
+      "tx_hash": "0x9vb3a0f2d5c1e478a6e3c2e0d9b4f7a3c7f8d1e2a3b4c5d6e7f8a9b0c1d2e3f4a",
       "chain": "ethferegum",
       "timestamp": "2025-09-02T12:42:23Z",
       "block_number": 20634912,
