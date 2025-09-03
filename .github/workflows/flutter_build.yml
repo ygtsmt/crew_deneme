@@ -3,7 +3,7 @@ name: Flutter Build APK
 on:
   push:
     branches:
-      - main   # sadece mfain branch'te çalışır, gerekirse değiştir
+      - main
 
 jobs:
   build:
@@ -16,13 +16,13 @@ jobs:
       - name: Flutter kur
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.8.1' # senin Flutter versiyonun
+          flutter-version: '3.24.0'  # güncel stable sürüm
 
       - name: Bağımlılıkları indir
         run: flutter pub get
 
       - name: APK build et
-        run: flutter build apk
+        run: flutter build apk --release
 
       - name: APK'yi artifact olarak kaydet
         uses: actions/upload-artifact@v4
