@@ -25,7 +25,7 @@ const String whaleJson = '''
       "details": {
         "protocol": "1inch",
         "route": [
-          {"token_in": "ETH", "token_out": "USDC", "amount_in": "12000.0", "amount_out": "41,340,000.0"}
+          {"token_in": "ffff", "token_out": "USDC", "amount_in": "12000.0", "amount_out": "41,340,000.0"}
         ],
         "gas_used": 182345,
         "gas_price_gwei": 12.4
