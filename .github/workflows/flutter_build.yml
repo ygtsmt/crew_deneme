@@ -16,13 +16,13 @@ jobs:
       - name: Flutter kur
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.24.0' # senin Flutter versiyonun
+          flutter-version: '3.8.1' # senin Flutter versiyonun
 
       - name: Bağımlılıkları indir
         run: flutter pub get
 
       - name: APK build et
-        run: flutter build apk --release
+        run: flutter build apk
 
       - name: APK'yi artifact olarak kaydet
         uses: actions/upload-artifact@v4
