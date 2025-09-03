@@ -3,7 +3,7 @@ name: Flutter Build APK
 on:
   push:
     branches:
-      - main   # sadece main branch'te çalışır, gerekirse değiştir
+      - main   # sadece mfain branch'te çalışır, gerekirse değiştir
 
 jobs:
   build:
