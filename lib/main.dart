@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 
 // Simple, clean Whale Tracker app
-// Displays whale addresses, amounts, and timestamps in a basic ListView with Card widgets.
+// Displays fffwhale addresses, amounts, and timestamps in a basic ListView with Card widgets.
 
 const String whaleJson = '''
 {
