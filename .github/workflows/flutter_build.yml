@@ -25,8 +25,7 @@ jobs:
         run: flutter build apk --release
 
       - name: APK'yi artifact olarak kaydet
-        uses: actions/upload-artifact@4
+        uses: actions/upload-artifact@v3
         with:
           name: app-release-apk
           path: build/app/outputs/flutter-apk/app-release.apk
-
