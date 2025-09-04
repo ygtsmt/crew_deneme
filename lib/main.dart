@@ -17,44 +17,38 @@ class WhaleTrackingApp extends StatelessWidget {
 class WhaleListScreen extends StatelessWidget {
   final List<Map<String, dynamic>> transactions = [
     {
-      "whale_address": "0x000000000000000000000000000000000000dead",
-      "value_formatted": "30627.128926",
-      "timestamp": "2025-09-04T09:16:17Z"
+      'whale_address': '0x000000000000000000000000000000000000dead',
+      'value_formatted': '0.000001',
+      'timestamp': '2025-09-04T11:06:53Z'
     },
     {
-      "whale_address": "0x000000000000000000000000000000000000dead",
-      "value_formatted": "0.000001",
-      "timestamp": "2025-09-04T09:16:27Z"
+      'whale_address': '0x000000000000000000000000000000000000dead',
+      'value_formatted': '27282154.680949',
+      'timestamp': '2025-09-04T11:06:53Z'
     },
     {
-      "whale_address": "0x8894e0a0c962cb723c1976a4421c95949be2d4e3",
-      "value_formatted": "3.969000",
-      "timestamp": "2025-09-04T09:15:47Z"
-    }
+      'whale_address': '0x000000000000000000000000000000000000dead',
+      'value_formatted': '25.812761',
+      'timestamp': '2025-09-04T11:06:36Z'
+    },
+    // Additional transactions can be added here
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Whale Transactions')), 
+      appBar: AppBar(
+        title: Text('Whale Transactions'),
+      ),
       body: ListView.builder(
         itemCount: transactions.length,
         itemBuilder: (context, index) {
           final transaction = transactions[index];
           return Card(
             margin: EdgeInsets.all(8.0),
-            child: Padding(
-              padding: EdgeInsets.all(16.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Text('Address: ${transaction['whale_address']}', style: TextStyle(fontSize: 16)),
-                  SizedBox(height: 8),
-                  Text('Amount: ${transaction['value_formatted']}', style: TextStyle(fontSize: 16)),
-                  SizedBox(height: 8),
-                  Text('Timestamp: ${transaction['timestamp']}', style: TextStyle(fontSize: 16)),
-                ],
-              ),
+            child: ListTile(
+              title: Text('Address: ${transaction['whale_address']}'),
+              subtitle: Text('Amount: ${transaction['value_formatted']} - Time: ${transaction['timestamp']}'),
             ),
           );
         },
